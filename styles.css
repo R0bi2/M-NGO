@@ -570,7 +570,7 @@ a {
 /* Origin */
 .origin-page {
   color: #fff;
-  background: #07120b url('assets/MangoTree.png') center top/cover fixed no-repeat;
+  background: #07120b url('assets/mangotree.png') center top/cover fixed no-repeat;
 }
 
 .origin-page::before {
