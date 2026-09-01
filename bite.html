@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Bite – M!NGO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bite-page">
+
+    <main>
+
+        <nav class="site-nav" aria-label="Hauptnavigation">
+
+            <a class="brand" href="index.html">M<span>!</span>NGO</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nährwerte</a></li>
+                <li><a href="ursprung.html">Ursprung und Anbau</a></li>
+                <li><a href="gerichte.html">Gerichte</a></li>
+            </ul>
+
+            <a class="nav-cta active" href="bite.html">Take a bite ↗</a>
+
+        </nav>
+
+        <header class="bite-intro">
+
+            <p class="eyebrow">
+                <span></span>
+                Interactive tasting
+            </p>
+
+            <h1>
+                TAKE<br>
+                <em>A BITE.</em>
+            </h1>
+
+            <p>
+                Klick dich Stück für Stück durch den wahrscheinlich saftigsten Screen des Internets.
+            </p>
+
+        </header>
+
+        <section class="bite-stage" aria-label="Interaktive Mango">
+
+            <button
+                class="bite-target"
+                id="bite-target"
+                type="button"
+                aria-label="Ein Stück von der Mango abbeißen"
+            >
+
+                <span class="mango-frame">
+                    <img
+                        id="bite-image"
+                        src="assets/bite-mango.png"
+                        alt="Eine vollständig sichtbare, reife Mango"
+                    >
+
+                    <span class="bite-marks" aria-hidden="true">
+                        <span class="bite-mark bite-mark-one"></span>
+                        <span class="bite-mark bite-mark-two"></span>
+                        <span class="bite-mark bite-mark-three"></span>
+                        <span class="bite-mark bite-mark-four"></span>
+                        <span class="bite-mark bite-mark-five"></span>
+                    </span>
+                </span>
+
+                <span class="click-orbit" id="click-orbit">
+                    CLICK<br>
+                    TO BITE
+                </span>
+
+            </button>
+
+        </section>
+
+        <section class="bite-status" aria-live="polite">
+
+            <p id="bite-count">BITES / 00</p>
+            <h2 id="bite-message">Trau dich. Der erste Biss gehört dir.</h2>
+            <button id="reset-bite" type="button" hidden>Noch eine Mango ↻</button>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
