@@ -570,11 +570,16 @@ a {
 /* Origin */
 .origin-page {
   color: #fff;
-  background: #07120b;
+  background: #07120b url('assets/MangoTree.png') center top/cover fixed no-repeat;
 }
 
 .origin-page::before {
-  display: none;
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: rgba(2, 10, 5, .66);
+  pointer-events: none;
 }
 
 .origin-page>* {
@@ -589,7 +594,6 @@ a {
   align-items: end;
   gap: 5vw;
   padding: 7rem 5vw 5rem;
-  background: linear-gradient(rgba(2, 10, 5, .62), rgba(2, 10, 5, .62)), url('assets/mango-tree.webp') center/cover no-repeat;
 }
 
 .origin-hero>p {
